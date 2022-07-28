@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@700&family=Noto+Sans+KR:wght@300&display=swap");
+
+* {
+  font-family: "Kaisei Opti", serif;
+  font-weight: 700;
+  margin: 0;
+}
+
+.grid_box {
+  display: grid;
+  height: 100vh;
+  place-content: center center;
+  background-color: black;
+}
+
+.b_grid_box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 197px);
+  min-width: 100vw;
+}
+
+.b_grid {
+  display: flex;
+  grid-column: span 2;
+  grid-row: span 2;
+  font-size: 70px;
+  justify-content: center;
+  align-items: center;
+}
+
+.b_grid:first-child {
+  background-color: #dae7de;
+  color: #f74508;
+}
+
+.b_grid:nth-child(2) {
+  background-color: #008a69;
+  color: white;
+}
+.b_grid:nth-child(3) {
+  background-color: #f74508;
+  color: #dae7de;
+}
+
+.b_grid:last-child {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.s_grid {
+  display: flex;
+  grid-column: span 1;
+  grid-row: span 1;
+  font-size: 40px;
+  height: 197px;
+  justify-content: center;
+  align-items: center;
+}
+.s_grid:first-child {
+  background-color: #f7abc5;
+  color: #f74508;
+}
+.s_grid:nth-child(2) {
+  background-color: #5f5fa9;
+  color: white;
+}
+.s_grid:nth-child(3) {
+  background-color: #ffc028;
+  color: #f74508;
+}
+.s_grid:nth-child(4) {
+  background-color: #f97374;
+  color: white;
+}
