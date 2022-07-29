@@ -6,6 +6,7 @@
   margin: 0;
 }
 
+/* i made
 .grid_box {
   display: grid;
   height: 100vh;
@@ -70,6 +71,66 @@
   color: #f74508;
 }
 .s_grid:nth-child(4) {
+  background-color: #f97374;
+  color: white;
+}
+*/
+
+/*right answer*/
+body {
+  padding: 15px;
+  font-family: "Itim", cursive;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+div:first-child,
+div:nth-child(2),
+div:nth-child(3) {
+  grid-column: span 2;
+  grid-row: span 2;
+  font-size: 48px;
+}
+
+div:first-child {
+  background-color: #dae7de;
+  color: #f74508;
+}
+
+div:nth-child(2) {
+  background-color: #008a69;
+  color: white;
+}
+
+div:nth-child(3) {
+  background-color: #f74508;
+  color: #dae7de;
+}
+
+div:nth-child(4) {
+  background-color: #f7abc5;
+  color: #f74508;
+}
+div:nth-child(5) {
+  background-color: #5f5fa9;
+  color: white;
+}
+div:nth-child(6) {
+  background-color: #ffc028;
+  color: #f74508;
+}
+div:nth-child(7) {
   background-color: #f97374;
   color: white;
 }
